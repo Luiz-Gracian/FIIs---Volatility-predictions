@@ -150,7 +150,7 @@ for(i in 1:12){
   
   else{
     
-    # Solve the quadratic programming problem to find the optimal portfolio weights (https://stackoverflow.com/questions/24090037/r-portfolio-optimization-solve-qp-constraints-are-inconsistent)
+    # Encontrando os pesos otimizados (https://stackoverflow.com/questions/24090037/r-portfolio-optimization-solve-qp-constraints-are-inconsistent)
     
     
     
