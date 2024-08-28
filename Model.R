@@ -36,7 +36,7 @@ getSymbols(fiis, src=fonte, from=inicio)
 
 
 
-#Lista para loop
+#Lista para loop - iremos interar por listas de datas - padrão R.
 
 list_mes_modelo = c('2010/2022-12','2010/2023-01','2010/2023-02','2010/2023-03','2010/2023-04','2010/2023-05','2010/2023-06',
                     '2010/2023-07','2010/2023-08','2010/2023-09','2010/2023-10','2010/2023-11')
@@ -51,7 +51,7 @@ list_mes_retorno = c("2022-01/2022-12", "2022-02/2023-01", "2022-03/2023-02", "2
 data = merge(Ad(GTWR11.SA), Ad(KNCR11.SA), Ad(TGAR11.SA),Ad(BCFF11.SA),Ad(BRCR11.SA),Ad(HGBS11.SA),Ad(HGLG11.SA))
 data_returns <- na.omit(diff(log(data)))
 
-##### ITERAÇÃO
+##### INTERAÇÃO
 
 for(i in 1:12){
   
