@@ -3,7 +3,7 @@
 The project aims to develop a methodology for predicting REITs volatility and constructing optimized portfolios. Key steps include data collection, log-return calculation, volatility modeling, and portfolio optimization.
 
 
-main - model construction and asset selection
+model - model construction and asset selection
 
 plot - vizualisation (ggplot2)
 
