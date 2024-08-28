@@ -17,7 +17,7 @@ dt_retorno_10 = rep(0,12)
 
 data_selic_23 = data.frame("Juros" = c(1.12,0.92,1.17,0.92,1.12,1.07,1.07,1.14,0.97,1,0.92,0.89))
 
-selic_23 = c(t(data_selic_23))
+selic_23 = c(t(data_selic_23)) #vetor
 
 selic_23_10 = selic_23*1.1
 
@@ -61,7 +61,7 @@ for(i in 1:12){
   
   # Retornos logarítmicos
   
-  log_returns <- na.omit(diff(log(valor_ajustado))) #Ps: omitindo os na, ficamos com dados a partir de 2019
+  log_returns <- na.omit(diff(log(valor_ajustado))) # Exclusão dos na
   
   #head(log_returns)
   
