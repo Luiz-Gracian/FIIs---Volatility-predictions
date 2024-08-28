@@ -24,7 +24,7 @@ selic_23_10 = selic_23*1.1
 selic_23[1]
 selic_23_10[1]
 
-##### Carregar dados - mineração do https://finance.yahoo.com/
+##### Carregar dados - minerados do https://finance.yahoo.com/
 
 inicio =  as.Date('2010-01-01')
 
