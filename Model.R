@@ -4,7 +4,7 @@ library('pacman')
 pacman::p_load(tidyverse,rugarch,quantmod,fGarch,rmgarch,fPortfolio,quadprog,MarkowitzR,PortfolioAnalytics)
 
 
-##### Save data_interação
+##### Save data_interação - armazenar valores
 
 dt_retorno_selic = rep(0,12)
 
@@ -12,7 +12,7 @@ dt_retorno_10 = rep(0,12)
 
 
 
-##### Retorno selic de 2023
+##### Retorno selic de 2023 - fornecido pelo BC
 
 
 data_selic_23 = data.frame("Juros" = c(1.12,0.92,1.17,0.92,1.12,1.07,1.07,1.14,0.97,1,0.92,0.89))
@@ -24,7 +24,7 @@ selic_23_10 = selic_23*1.1
 selic_23[1]
 selic_23_10[1]
 
-##### Carregar dados
+##### Carregar dados - mineração do https://finance.yahoo.com/
 
 inicio =  as.Date('2010-01-01')
 
