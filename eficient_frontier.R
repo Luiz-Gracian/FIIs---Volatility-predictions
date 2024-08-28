@@ -2,9 +2,7 @@ library('pacman')
 
 pacman::p_load(tidyverse,rugarch,quantmod,fGarch,rmgarch,fPortfolio,quadprog,MarkowitzR,PortfolioAnalytics,timetk,plotly)
 
-
-###### https://www.codingfinance.com/post/2018-05-31-portfolio-opt-in-r/
-
+###### Baseado em: https://www.codingfinance.com/post/2018-05-31-portfolio-opt-in-r/
 
 ##### Carregar dados
 
@@ -33,9 +31,7 @@ log_returns <- na.omit(diff(log(valor_ajustado))) #Ps: omitindo os na, ficamos c
 head(log_returns)
 
 
-
-
-############################ CHECAR FIORUCCI (?)
+# Averiguar cálculo da matriz de covariancia, deve ser extraida do modelo
 
 
 cov_matrix <- matrix(c(1.750771e-04, 1.493605e-05, 2.727978e-05,
@@ -48,11 +44,6 @@ mean_ret = colMeans(log_returns)
 
 
 print(mean_ret *252) # Anual
-
-
-# Estamo pegando o retorno médio desde 2019, isto é, desde o ínicio dos dados e multiplicando por 252
-# que seria a quantidade de dias do ano, porém claramente é errôneo essa perspectiva, apenas teste.
-#
 
 
 # pesos
