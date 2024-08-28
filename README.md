@@ -7,4 +7,4 @@ main - model construction and asset selection
 
 plot - vizualisation (ggplot2)
 
-efeccient_frontier; use it for each month of interests
+efeccient_frontier; use it for each month of interests (pending update)
